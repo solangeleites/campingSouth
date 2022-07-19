@@ -1,0 +1,140 @@
+@media (max-width: 578px) {
+  .header {
+    padding: 0px 50px 0px 50px;
+  }
+  .navbar i {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    right: 10px;
+    z-index: 9999;
+    width: 50%;
+    height: calc(50vh - 50px);
+    display: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+  }
+  #toggle-menu {
+    display: none;
+  }
+  #toggle-menu:checked + .menu {
+    display: flex;
+  }
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  .section-first {
+    background: url(./img/bg1.jpg) no-repeat center/cover;
+  }
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  .section-second {
+    flex-direction: column;
+    height: 900px;
+    gap: 10px;
+  }
+  .hero-img {
+    width: 330px;
+    height: auto;
+  }
+  .hero-text {
+    width: 330px;
+    height: 600px;
+    gap: 15px;
+  }
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  .section-three {
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tittle-text {
+    width: 330px;
+    gap: 15px;
+    text-align: center;
+  }
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  .actividades {
+    height: 800px;
+  }
+  .text-act {
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 5px;
+    text-align: center;
+  }
+  .container-actividades {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    gap: 10px;
+  }
+  .img-actividades {
+    height: 200px;
+  }
+  .imgact1 {
+    height: 50px;
+    width: 50px;
+  }
+  .imgact2 {
+    height: 50px;
+    width: 50px;
+  }
+  .imgact3 {
+    height: 50px;
+    width: 50px;
+  }
+  h5 {
+    margin: 10px 0px;
+  }
+  .p-act {
+    margin: 10px 0px;
+  }
+  button {
+    margin: 10px 0px;
+  }
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  /* ------------------------- */
+  /* ------------------------------- */
+  footer {
+    flex-direction: column;
+    height: 1300px;
+  }
+  .ubicacion {
+    height: 500px;
+  }
+  iframe{
+    width: 300px;
+    height: 400px;
+  }
+  .contact{
+  }
+}

@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cormorant SC', serif;
+    color: white;
+        scrollbar-width: thin;
+        scrollbar-color: blue orange;
+}
+:root{
+    --celeste: #0372a9;
+    --verde: #82a691;
+    --gris: #2d3640;
+    --negro: #131415;
+    --crema: #f2f2f0;
+}
+                            /*! ACA ARRANCO CON EL HEADER */
+.header{
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    margin: 0 auto;
+    position: sticky;
+    top: 0%;
+}
+.logo{
+    height: 100%;
+}
+.navbar{
+    display: flex;
+}
+#toggle-menu{
+    display: none;
+}
+.navbar i{
+    display: none;
+    color:#00283c;
+    font-size: xx-large;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.item-menu{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#hamb{
+    display: none;
+}
+                            /*! ACA TERMINO CON EL HEADER */
+/*!-------------------------------------------------------------------------- */
+                         /*! ACA ARRANCO CON LA PRIMER SECTION */                   
+.section-first {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background:url(./img/bg1.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero {
+    text-align: center;
+    margin: 15%;
+    font-size: xx-large;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
+}
+                         /*! ACA TERMINO CON LA PRIMER SECTION */
+/* !------------------------------------------------------------------------ */
+                         /*! ACA ARRANCO CON LA SEGUNDA SECTION */
+.section-second {
+    background:var(--celeste);
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.hero-img{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: auto;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+h2 {
+    font-size: xx-large;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
+}
+#btn-2 {
+    border: none;
+    border-radius: 5px;
+    height: 55px;
+    width: 320px;
+    font-family: 'Cormorant SC', serif;
+    font-size: x-large;
+    cursor: pointer;
+}
+#btn-2:hover {
+    box-shadow: 1px -1px 15px 1px rgba(0,0,0,0.22);
+}
+                         /*! ACA TERMINO CON LA SEGUNDA SECTION */
+/* !------------------------------------------------------------------------ */
+                         /*! ACA ARRANCO CON LA TERCERA SECTION */
+.section-three {
+    background:var(--celeste);
+    height: 90vh;
+}
+.tittle-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    gap: 15px;
+}
+.tittle-st {
+    font-weight: 600;
+    font-size: xx-large;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
+}
+.text-st {
+    font-weight: 400;
+    font-size: larger;
+}
+.container-grid {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(160px, auto);
+}
+.container-grid div {
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.30);
+}
+.item:nth-child(1){
+    background:url(./img/house1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.item:nth-child(2){
+    background: url(./img/house2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/3 ;
+    grid-row: 1/2;
+}
+.item:nth-child(3){
+    background: url(./img/house4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/4 ;
+    grid-row: 1/2;
+}
+.item:nth-child(4){
+    background: url(./img/house6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/3 ;
+    grid-row: 3/2;
+}
+.item:nth-child(5){
+    background: url(./img/house7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/4 ;
+    grid-row: 2/3;
+}
+.item:nth-child(6){
+    background: url(./img/ult.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/4 ;
+    grid-row: 3/3;
+}
+                         /*! ACA TERMINO CON LA TERCERA SECTION */
+/* !------------------------------------------------------------------------ */
+                         /*! ACA ARRANCO CON LA SECTION  ACTIVIDADES */
+.actividades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:var(--celeste);
+    height: 90vh;
+}
+.h3-act{
+    text-align:center;
+    font-size: xx-large;
+    font-weight: 900;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
+}
+.text-act{
+    font-weight: 500;
+    font-size:large;
+    text-align: center;
+}
+.container-actividades{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    height: 700px;
+    margin: 10px;
+}
+.img-actividades{
+    text-align: center;
+}
+.imgact1{
+    background: url(./img/evento.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 380px;
+    margin: 0 auto;
+}
+.imgact2{
+    background: url(./img/kayak.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 380px;
+    margin: 0 auto;
+}
+.imgact3{
+    background: url(./img/trekking.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 380px;
+    margin: 0 auto;
+}
+h5{
+    font-size: larger;
+    font-weight: 900;
+}
+.p-act{
+    font-weight: 300;
+    margin: 15px;
+}
+button{
+    border: none;
+    margin: 15px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Cormorant SC', serif;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*! ACA TERMINO CON LA SECTION ACTIVIDADES */
+/* !------------------------------------------------------------------------ */
+                         /*! ACA ARRANCO CON EL FOOTER */
+footer {
+    background-color: var(--celeste);
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ubicacion{
+    background:#003e5d53;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding: 70px 20px;
+    max-width: 1000px;
+}
+h4 {
+    font-size: xx-large;
+    font-weight: 900;
+}
+iframe {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 0px 20px;
+    background:#003e5d;
+    max-width: 700px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 10px;
+    width: 300px;
+    min-width: 100px;
+    margin: 0 auto;
+    font-size:large;
+    font-weight: 700;
+}
+textarea {
+    width: 300px;
+    min-width: 100px;
+}
+p {
+    font-size:large;
+    font-weight: 700;
+}
+label{
+    font-size:large;
+    font-weight: 700;
+}
+input{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+}
+textarea{
+    border: none;
+    border-radius:10px ;
+    padding: 10px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 50px;
+}
+textarea:focus {
+    outline: none;
+}
+form button{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    margin:30px 80px;
+} 
