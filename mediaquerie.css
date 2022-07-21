@@ -1,4 +1,7 @@
 @media (max-width: 578px) {
+  h1{
+    font-size: xx-large;
+  }
   .header {
     padding: 0px 50px 0px 50px;
   }
@@ -20,6 +23,10 @@
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 20px;
+  }
+  .menu:checked{
+    transform: translateX(-500);
+    transition: transform 0.5s linear;
   }
   #toggle-menu {
     display: none;
@@ -134,7 +141,5 @@
   iframe{
     width: 300px;
     height: 400px;
-  }
-  .contact{
   }
 }

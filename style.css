@@ -7,14 +7,15 @@
     list-style: none;
 }
 html{
-    scroll-behavior: smooth;
+        scroll-behavior: smooth;
+        scroll-padding-top: 150px;
 }
 body{
     font-family: 'Cormorant SC', serif;
     color: white;
         scrollbar-width: thin;
         scrollbar-color: blue orange;
-}
+    }
 :root{
     --celeste: #0372a9;
     --verde: #82a691;
@@ -26,7 +27,7 @@ body{
 .header{
     background: rgba( 255, 255, 255, 0.3 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
+    backdrop-filter: blur( 15px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     justify-content: space-around;
@@ -38,6 +39,12 @@ body{
 }
 .logo{
     height: 100%;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: rotate(360deg);
+    transition: transform 2s ease;
+
 }
 .navbar{
     display: flex;
@@ -63,6 +70,43 @@ body{
 #hamb{
     display: none;
 }
+.item-menu{
+    position: relative;
+    padding: 10px 0px;
+}
+.header .link::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color:#00283c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform:  scaleX(0);
+    transform-origin: bottom right;
+    animation-name: cambiarColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.header .link:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+
+}
+@keyframes cambiarColor{
+    0% {
+        background-color: #0089BA;
+    }
+    50%{
+        background-color: var(--verde);
+    }
+    100%{
+        background-color:#B5467F ;
+    }
+}
+
+
                             /*! ACA TERMINO CON EL HEADER */
 /*!-------------------------------------------------------------------------- */
                          /*! ACA ARRANCO CON LA PRIMER SECTION */                   
@@ -75,17 +119,17 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.hero {
+h1 {
     text-align: center;
     margin: 15%;
-    font-size: xx-large;
+    font-size: xxx-large;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
 }
                          /*! ACA TERMINO CON LA PRIMER SECTION */
 /* !------------------------------------------------------------------------ */
                          /*! ACA ARRANCO CON LA SEGUNDA SECTION */
 .section-second {
-    background:var(--celeste);
+    background:linear-gradient(270deg, #335577ff, #5A80A2ff);
     display: flex;
     flex-direction: row;
     height: 90vh;
@@ -111,23 +155,11 @@ h2 {
     font-size: xx-large;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
 }
-#btn-2 {
-    border: none;
-    border-radius: 5px;
-    height: 55px;
-    width: 320px;
-    font-family: 'Cormorant SC', serif;
-    font-size: x-large;
-    cursor: pointer;
-}
-#btn-2:hover {
-    box-shadow: 1px -1px 15px 1px rgba(0,0,0,0.22);
-}
                          /*! ACA TERMINO CON LA SEGUNDA SECTION */
 /* !------------------------------------------------------------------------ */
                          /*! ACA ARRANCO CON LA TERCERA SECTION */
 .section-three {
-    background:var(--celeste);
+    background:linear-gradient(270deg, #335577ff, #5A80A2ff);
     height: 90vh;
 }
 .tittle-text {
@@ -213,7 +245,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background:var(--celeste);
+    background:linear-gradient(270deg, #335577ff, #5A80A2ff);
     height: 90vh;
 }
 .h3-act{
@@ -247,6 +279,7 @@ h2 {
     width: 380px;
     margin: 0 auto;
 }
+
 .imgact2{
     background: url(./img/kayak.png);
     background-position: center;
@@ -285,18 +318,25 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: #00283c;
+    color: white;
+    transition: all 1s ease;
+    transform: scaleX(20px);
+}
+
 /*! ACA TERMINO CON LA SECTION ACTIVIDADES */
 /* !------------------------------------------------------------------------ */
                          /*! ACA ARRANCO CON EL FOOTER */
 footer {
-    background-color: var(--celeste);
+    background: linear-gradient(135deg, #335577ff, #5A80A2ff);
     height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 .ubicacion{
-    background:#003e5d53;
+    background:linear-gradient(180deg, #335577ff, #5A80A2ff);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,7 +362,7 @@ iframe {
     text-align: center;
     gap: 20px;
     padding: 0px 20px;
-    background:#003e5d;
+    background:linear-gradient(180deg, #335577ff, #5A80A2ff);
     max-width: 700px;
 }
 form{
@@ -351,12 +391,20 @@ label{
 input{
     border: none;
     border-radius: 10px;
-    width: 300px;
-    height: 20px;
+    width: 250px;
+    height: 10px;
     padding: 10px;
+    font-family: 'Cormorant SC', serif;
+    transition: all 0.40s ease;
+    font-size: large;
 }
 input:focus{
     outline: none;
+    font-weight: 900;
+    background-color: white;
+    transition: all 0.5s ease;
+    height: 30px;
+    width: 300px;
 }
 textarea{
     border: none;
@@ -365,9 +413,13 @@ textarea{
     max-width: 300px;
     min-height: 50px;
     max-height: 50px;
+    font-family: 'Cormorant SC', serif;
+    transition: all 0.40s ease;
+    font-size: large;
 }
 textarea:focus {
     outline: none;
+    font-weight: 900;
 }
 form button{
     width: 150px;
@@ -376,7 +428,7 @@ form button{
     border: none;
     font-family: 'Cormorant SC', serif;
     font-size: large;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
-    margin:30px 80px;
+    margin:20px 80px;
 } 
