@@ -78,7 +78,7 @@ body{
     content: "";
     height: 2px;
     width: 100%;
-    background-color:#00283c;
+    background-color:#03045eff;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -92,20 +92,27 @@ body{
     transform-origin: bottom left;
     transform: scaleX(1);
     transition: transform 0.3s ease;
-
 }
 @keyframes cambiarColor{
-    0% {
-        background-color: #0089BA;
+    0%{
+        background-color:  #023e8aff;
+    }
+    20%{
+        background-color: #0077b6ff;
+    }
+    30%{
+        background-color: #0096c7ff;
+    }
+    40%{
+        background-color: #00b4d8ff;
     }
     50%{
-        background-color: var(--verde);
+        background-color: #48cae4ff;
     }
-    100%{
-        background-color:#B5467F ;
+    60%{
+        background-color:  #90e0efff;
     }
 }
-
 
                             /*! ACA TERMINO CON EL HEADER */
 /*!-------------------------------------------------------------------------- */
@@ -114,7 +121,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 90vh;
-    background:url(./img/bg1.jpg);
+    background:url(./img/ult.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
