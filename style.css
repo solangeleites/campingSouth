@@ -36,14 +36,11 @@ body{
     top: 0%;
 }
 .logo{
-    height: 300%;
-    cursor: pointer;
-    margin-bottom: 30px;
+    height: 60px;
 }
 .logo:hover{
     transform: rotate(360deg);
     transition: transform 2s ease;
-
 }
 .navbar{
     display: flex;
