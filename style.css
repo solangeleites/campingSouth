@@ -8,13 +8,11 @@
 }
 html{
         scroll-behavior: smooth;
-        scroll-padding-top: 150px;
+        scroll-padding-top: 73px;
 }
 body{
     font-family: 'Cormorant SC', serif;
     color: white;
-        scrollbar-width: thin;
-        scrollbar-color: blue orange;
     }
 :root{
     --celeste: #0372a9;
@@ -38,8 +36,9 @@ body{
     top: 0%;
 }
 .logo{
-    height: 100%;
+    height: 300%;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 .logo:hover{
     transform: rotate(360deg);
@@ -100,16 +99,16 @@ body{
     20%{
         background-color: #0077b6ff;
     }
-    30%{
+    40%{
         background-color: #0096c7ff;
     }
-    40%{
+    60%{
         background-color: #00b4d8ff;
     }
-    50%{
+    80%{
         background-color: #48cae4ff;
     }
-    60%{
+    100%{
         background-color:  #90e0efff;
     }
 }
@@ -120,16 +119,13 @@ body{
 .section-first {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 90vh;
-    background:url(./img/ult.jpg);
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:url(./img/ult.jpg) no-repeat center/cover;
 }
 h1 {
     text-align: center;
-    margin: 15%;
-    font-size: xxx-large;
+    font-size: 120px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
 }
                          /*! ACA TERMINO CON LA PRIMER SECTION */
@@ -398,8 +394,8 @@ label{
 input{
     border: none;
     border-radius: 10px;
-    width: 250px;
-    height: 10px;
+    width: 300px;
+    height: 20px;
     padding: 10px;
     font-family: 'Cormorant SC', serif;
     transition: all 0.40s ease;
@@ -411,7 +407,6 @@ input:focus{
     background-color: white;
     transition: all 0.5s ease;
     height: 30px;
-    width: 300px;
 }
 textarea{
     border: none;
@@ -427,6 +422,7 @@ textarea{
 textarea:focus {
     outline: none;
     font-weight: 900;
+    max-height: 70px;
 }
 form button{
     width: 150px;
