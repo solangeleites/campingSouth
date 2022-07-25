@@ -1,7 +1,7 @@
 @media (max-width: 578px) {
   html{
     scroll-behavior: smooth;
-    scroll-margin-top: 60px;
+    scroll-margin-top: 70px;
   }
   h1{
     font-size: 60px;
