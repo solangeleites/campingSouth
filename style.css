@@ -38,6 +38,7 @@ body{
 }
 .logo{
     height: 60px;
+    cursor: pointer;
 }
 .logo:hover{
     transform: rotate(360deg);
@@ -131,7 +132,7 @@ h1{
 /* !------------------------------------------------------------------------ */
                          /*! ACA ARRANCO CON LA SEGUNDA SECTION */
 .section-second {
-    background:linear-gradient(270deg, #335577ff, #5A80A2ff);
+    background: linear-gradient(180deg, #335577ff, #5A80A2ff 25%);
     display: flex;
     flex-direction: row;
     height: 90vh;
@@ -161,7 +162,7 @@ h2 {
 /* !------------------------------------------------------------------------ */
                          /*! ACA ARRANCO CON LA TERCERA SECTION */
 .section-three {
-    background:linear-gradient(270deg, #335577ff, #5A80A2ff);
+    background: linear-gradient(180deg, #335577ff, #5A80A2ff 25%);
     height: 90vh;
 }
 .tittle-text {
@@ -247,7 +248,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background:linear-gradient(270deg, #335577ff, #5A80A2ff);
+    background: linear-gradient(180deg, #335577ff, #5A80A2ff 25%);
     height: 90vh;
 }
 .h3-act{
@@ -256,6 +257,7 @@ h2 {
     font-weight: 900;
     padding-bottom: 5px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
+    margin-top: 30px;
 }
 .text-act{
     font-weight: 500;
@@ -267,37 +269,32 @@ h2 {
     flex-direction:row;
     justify-content: center;
     height: 700px;
-    margin: 10px;
 }
 .img-actividades{
     text-align: center;
+    margin: 0px 100px;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
 }
 .imgact1{
-    background: url(./img/evento.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 380px;
+    background: url(./img/evento.png) no-repeat center/cover;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
+    opacity: 0.8;
 }
 
 .imgact2{
-    background: url(./img/kayak.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 380px;
+    background: url(./img/kayak.png) no-repeat center/cover;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
 }
 .imgact3{
-    background: url(./img/trekking.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 380px;
+    background: url(./img/trekking.png) no-repeat center/cover;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
 }
 h5{
@@ -307,10 +304,14 @@ h5{
 .p-act{
     font-weight: 300;
     margin: 15px;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
 }
 button{
+    text-align: center;
     border: none;
-    margin: 15px;
+    margin: 10px;
     width: 150px;
     height: 30px;
     border-radius: 5px;
@@ -318,27 +319,33 @@ button{
     font-size: large;
     font-weight: 700;
     cursor: pointer;
+    margin: 0 auto;
 }
-
 button:hover{
     background-color: #00283c;
     color: white;
     transition: all 1s ease;
     transform: scaleX(20px);
 }
+.centrar{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
 
 /*! ACA TERMINO CON LA SECTION ACTIVIDADES */
 /* !------------------------------------------------------------------------ */
                          /*! ACA ARRANCO CON EL FOOTER */
 footer {
-    background: linear-gradient(135deg, #335577ff, #5A80A2ff);
+    background: linear-gradient(180deg, #335577ff, #5A80A2ff 25%);
     height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 .ubicacion{
-    background:linear-gradient(180deg, #335577ff, #5A80A2ff);
+    background:linear-gradient(180deg, #335577ff, #5A80A2ff 25%);
     display: flex;
     flex-direction: column;
     justify-content: center;
