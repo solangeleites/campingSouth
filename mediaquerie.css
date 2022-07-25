@@ -101,7 +101,8 @@
     gap: 10px;
   }
   .img-actividades {
-    height: 200px;
+    height: 190px;
+    width: 320px;
   }
   .imgact1 {
     height: 50px;
@@ -119,10 +120,15 @@
     margin: 10px 0px;
   }
   .p-act {
-    margin: 10px 0px;
+    margin: 0 auto;
+    width: 320px;
   }
   button {
-    margin: 10px 0px;
+    margin: 0 auto;
+  }
+  .centrar{
+    margin: 0 auto;
+    padding: 0px;
   }
   /* ------------------------- */
   /* ------------------------------- */
