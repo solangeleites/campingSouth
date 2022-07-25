@@ -34,6 +34,7 @@ body{
     margin: 0 auto;
     position: sticky;
     top: 0%;
+    z-index: 9999;
 }
 .logo{
     height: 60px;
@@ -120,10 +121,11 @@ body{
     height: 90vh;
     background:url(./img/ult.jpg) no-repeat center/cover;
 }
-h1 {
+h1{
     text-align: center;
     font-size: 120px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
+    z-index: 0;
 }
                          /*! ACA TERMINO CON LA PRIMER SECTION */
 /* !------------------------------------------------------------------------ */
