@@ -9,6 +9,7 @@
 html{
         scroll-behavior: smooth;
         scroll-padding-top: 70px;
+        scroll-padding-bottom: 5px;
         max-width: 2000px;
         max-height: 1000px;
 }
@@ -342,10 +343,10 @@ button:hover{
                          /*! ACA ARRANCO CON EL FOOTER */
 footer {
     background: linear-gradient(180deg, #335577ff, #5A80A2ff 25%);
-    height: 650px;
+    height: 95vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 .ubicacion{
     background:linear-gradient(180deg, #335577ff, #5A80A2ff 25%);
@@ -354,8 +355,9 @@ footer {
     justify-content: center;
     text-align: center;
     gap: 15px;
-    padding: 70px 20px;
+    padding: 70px 0px;
     max-width: 1000px;
+    margin: 0 auto;
 }
 h4 {
     font-size: xx-large;
