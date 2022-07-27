@@ -52,9 +52,11 @@
     gap: 10px;
   }
   .hero-img {
-    max-width: 900px;
-  min-width: 300px;
-    height: auto;
+    width: 330px;
+  }
+  #camping{
+  max-width: 330px;
+  margin: 0 auto;
   }
   .hero-text {
     max-width: 330px;
