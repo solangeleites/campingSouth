@@ -1,4 +1,5 @@
-@media (max-width: 578px){
+@media screen and (max-width: 768px)
+  {
   html{
     scroll-behavior: smooth;
     scroll-margin-top: 70px;
