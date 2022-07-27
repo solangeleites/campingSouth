@@ -1,5 +1,5 @@
  /** MEDIA QUERIA 768PX */
- @media screen and (max-width: 768px){
+ @media screen and (min-width: 768px) and (max-width:992px){
     html{
     scroll-behavior: smooth;
     scroll-margin-top: 70px;
@@ -62,10 +62,11 @@
     height: auto;
   }
   .hero-text {
-    max-height: 500px;
+    max-height: 700px;
     min-height: 200px;
     gap: 30px;
     min-width: 600px;
+    max-width: 600px;
   }
   /** -------------------------------------------------------*/
   .section-three {
@@ -151,4 +152,24 @@
   .contact{
   max-width: 100%;
   }
+}
+@media (min-width: 768px) and (max-width: 1199.98px){
+  .header{
+    font-size: 13px;
+  }
+  .hero-img{
+    width: 500px;
+    padding-left: 25px;
+  }
+  .hero-text{
+  width: 450px;
+  padding-right: 25px;
+
+}
+.section-second{
+  gap: 50px;
+}
+.contact{
+  padding-right: 25px;
+}
 }
